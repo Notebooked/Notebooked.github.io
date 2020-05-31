@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>The Box Trials</title>
+		<link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="CSS/product.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+		<script src="slideshow.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="hover">Home</a></li>
+                    <li><a href="news.html" class="hover">News</a></li>
+                    <li><a class="active">Products</a></li>
+                    <li><a href="contact.html" class="hover">Contact</a></li>
+                    <li><a href="donate.html" class="hover">Donate</a></li>
+                </ul>
+            </nav>
+        </header>
+		<p style="font-size:10vh"></p>
+    <a href="products.html" style="font-size:60px;text-decoration:none;color:#333;">&#129064;</a>
+      <div class="main">
+        <div class="slideshow-container left">
+          <div class="mySlides fade" style="display:block">
+            <img class="screenshot" src="TBT1.png">
+          </div>
+          <div class="mySlides fade" style="display:none">
+            <img class="screenshot" src="TBT2.png">
+          </div>
+          <div class="mySlides fade" style="display:none">
+            <img class="screenshot" src="TBT3.png">
+          </div>
+          <div class="mySlides fade" style="display:none">
+            <img class="screenshot" src="TBT4.png">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="right">
+          <h1 style="text-align:center;">The Box Trials</h1>
+          <h2 style="text-align:center;">$8.99</h1>
+          <label class="container">Windows
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Mac
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Linux
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Chromebook
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+		<div style="display:flex;justify-content:center;padding-top:20px;" id="paypal-button-container"></div>
+		<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+		<script>
+			paypal.Buttons({
+				style: {
+					shape: 'pill',
+					color: 'gold',
+					layout: 'vertical',
+					label: 'paypal',
+					
+				},
+				createOrder: function(data, actions) {
+					return actions.order.create({
+						purchase_units: [{
+							amount: {
+								value: '0.00'
+							}
+						}]
+					});
+				},
+				onApprove: function(data, actions) {
+					return actions.order.capture().then(function(details) {
+						alert('Transaction completed by ' + details.payer.name.given_name + '!');
+					});
+				}
+			}).render('#paypal-button-container');
+		</script>
+    </div>
+    </div>
+	</body>
+</html>
