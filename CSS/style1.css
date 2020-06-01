@@ -51,7 +51,8 @@ li .active {
   background-color:blue;
 }
 
-.articles li a {
+
+ul.articles li a {
   margin:50px;
   border:3px solid gray;
 }
