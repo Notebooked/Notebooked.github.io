@@ -1,5 +1,5 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(30,30,30);
 }
 
@@ -37,7 +37,6 @@ li a {
   font-size:2.5vw;
   font-family: 'Roboto', sans-serif;
 }
-
 li .hover:hover {
   background-color: #111;
 }
@@ -60,9 +59,4 @@ h1 {
   text-align: center;
   font-size: 40px;
   color:white;
-}
-
-p {
-  font-size: 30px;
-  color: white;
 }
