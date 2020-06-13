@@ -1,5 +1,5 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(30,30,30);
 }
 
@@ -20,9 +20,10 @@ header ul {
   padding: 0;
   overflow: hidden;
   width:100%;
+  justify-content:center;
 }
 
-li {
+header li {
   float: left;
 }
 
@@ -63,6 +64,10 @@ a img:hover {
   list-style-type:none;
 }
 
+.center li {
+  float:left;
+}
+
 p {
   font-size:30px;
   color:white;
@@ -72,8 +77,4 @@ h1 {
   text-align: center;
   font-size: 40px;
   color:white;
-}
-
-footer {
-  color: lightgray;
 }
