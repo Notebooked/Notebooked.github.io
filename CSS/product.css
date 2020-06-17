@@ -56,6 +56,10 @@ h1 {
 	font-size: 40px;
 }
 
+h1,h2 {
+	color:black;
+}
+
 .left, .right {
   float:left;
   padding-left:20px;
