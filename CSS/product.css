@@ -1,5 +1,6 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(30,30,30);
 }
 
 header {
@@ -10,7 +11,6 @@ header {
     right: 0;
     height: 5vw;
     line-height: 5vw;
-    background-color: #333;
     z-index: 99999;
 }
 
@@ -20,10 +20,7 @@ ul {
   padding: 0;
   overflow: hidden;
   width:100%;
-}
-
-header ul {
-  background-color: #333;
+  justify-content:center;
 }
 
 li {
@@ -41,12 +38,17 @@ li a {
   font-family: 'Roboto', sans-serif;
 }
 
+p {
+  font-size:30px;
+  color:white;
+}
+
 li .hover:hover {
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 li .active {
-	background-color:green;
+  background-color:blue;
 }
 
 h1 {
