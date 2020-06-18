@@ -59,13 +59,13 @@ h1 {
 
 .logo img,h2 {
 	float:left;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
 }
 
 .logo {
 	text-align:center;
 	justify-content:center;
-	margin: 0;
-  	position: absolute;
-  	top: 50%;
-  	transform: translateY(-50%);
 }
