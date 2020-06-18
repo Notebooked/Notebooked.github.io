@@ -56,3 +56,7 @@ h1 {
 	font-size: 40px;
   color:white;
 }
+
+.logo img,h2 {
+	float:left;
+}
