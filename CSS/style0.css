@@ -54,17 +54,17 @@ li .active {
 h1 {
 	text-align: center;
 	font-size: 40px;
-  color:white;
+  	color:white;
 }
 
 .logo img,h2 {
 	margin: 0;
   	top: 50%;
   	transform: translateY(-50%);
-	float:left;
 }
 
 .logo {
 	text-align:center;
 	justify-content:center;
+	display:flex;	
 }
