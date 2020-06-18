@@ -61,6 +61,7 @@ h1 {
 	margin: 0;
   	top: 50%;
   	transform: translateY(-50%);
+	float:left;
 }
 
 .logo {
