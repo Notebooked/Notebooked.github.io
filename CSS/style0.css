@@ -60,3 +60,8 @@ h1 {
 .logo img,h2 {
 	float:left;
 }
+
+.logo {
+	text-align:center;
+	justify-content:center;
+}
