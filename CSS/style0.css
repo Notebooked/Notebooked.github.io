@@ -68,6 +68,5 @@ h1 {
 .logo {
 	text-align:center;
 	justify-content:center;
-	display:flex;	
-	background-color:blue;
+	display:flex;
 }
