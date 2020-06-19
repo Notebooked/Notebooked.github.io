@@ -10,19 +10,19 @@ ErrorDocument 500 /errors/500.html
 
 #### Force https://www and remove trailing / from files ####
 ## Turn on rewrite engine
-RewriteEngine on
+# RewriteEngine on
 
 # Remove trailing slash from non-filepath urls
-RewriteCond %{REQUEST_URI} /(.+)/$
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ https://www.example.com/%1 [R=301,L]
+# RewriteCond %{REQUEST_URI} /(.+)/$
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^ https://www.example.com/%1 [R=301,L]
 
 # Include trailing slash on directory 
-RewriteCond %{REQUEST_URI} !(.+)/$
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.+)$ https://www.example.com/$1/ [R=301,L]
+# RewriteCond %{REQUEST_URI} !(.+)/$
+# RewriteCond %{REQUEST_FILENAME} -d
+# RewriteRule ^(.+)$ https://www.example.com/$1/ [R=301,L]
 
 # Force HTTPS and WWW 
-RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
-RewriteCond %{https} off  
-RewriteRule ^(.*)$ https://www.example.com/$1 [R=301,L]
+# RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
+# RewriteCond %{https} off  
+# RewriteRule ^(.*)$ https://www.example.com/$1 [R=301,L]
