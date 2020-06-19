@@ -1,4 +1,28 @@
+#### Error pages ####
+# Bad request
 ErrorDocument 400 /400.html
+# Insufficient permissions
 ErrorDocument 403 /403.html
+# Not found
 ErrorDocument 404 /404.html
+# Server error
 ErrorDocument 500 /errors/500.html
+
+#### Force https://www and remove trailing / from files ####
+## Turn on rewrite engine
+RewriteEngine on
+
+# Remove trailing slash from non-filepath urls
+RewriteCond %{REQUEST_URI} /(.+)/$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ https://www.example.com/%1 [R=301,L]
+
+# Include trailing slash on directory 
+RewriteCond %{REQUEST_URI} !(.+)/$
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+)$ https://www.example.com/$1/ [R=301,L]
+
+# Force HTTPS and WWW 
+RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
+RewriteCond %{https} off  
+RewriteRule ^(.*)$ https://www.example.com/$1 [R=301,L]
