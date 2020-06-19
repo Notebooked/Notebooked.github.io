@@ -58,8 +58,6 @@ h1 {
 }
 
 .logo img,h2 {
-  	top: 50%;
-	transform: translateY(-50%);
 }
 
 .logo {
