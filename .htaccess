@@ -6,7 +6,7 @@ ErrorDocument 403 /403.html
 # Not found
 ErrorDocument 404 /404.html
 # Server error
-ErrorDocument 500 /errors/500.html
+ErrorDocument 500 /500.html
 
 #### Force https://www and remove trailing / from files ####
 ## Turn on rewrite engine
