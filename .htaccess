@@ -1,6 +1,8 @@
 #### Error pages ####
 # Bad request
 ErrorDocument 400 /400.html
+# Login required
+ErrorDocument 401 /401.html
 # Insufficient permissions
 ErrorDocument 403 /403.html
 # Not found
