@@ -20,11 +20,11 @@ ul {
   padding: 0;
   overflow: hidden;
   width:100%;
-  justify-content:right;
+  justify-content:center;
 }
 
 li {
-  float: center;
+  float: left;
 }
 
 li a {
