@@ -13,22 +13,3 @@ ErrorDocument 500 /errors/500.html
 ErrorDocument 503 /errors/503.html
 # Time-Out
 ErrorDocument 504 /errors/504.html
-
-#### Force https://www and remove trailing / from files ####
-## Turn on rewrite engine
-# RewriteEngine on
-
-# Remove trailing slash from non-filepath urls
-# RewriteCond %{REQUEST_URI} /(.+)/$
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteRule ^ https://www.example.com/%1 [R=301,L]
-
-# Include trailing slash on directory 
-# RewriteCond %{REQUEST_URI} !(.+)/$
-# RewriteCond %{REQUEST_FILENAME} -d
-# RewriteRule ^(.+)$ https://www.example.com/$1/ [R=301,L]
-
-# Force HTTPS and WWW 
-# RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
-# RewriteCond %{https} off  
-# RewriteRule ^(.*)$ https://www.example.com/$1 [R=301,L]
