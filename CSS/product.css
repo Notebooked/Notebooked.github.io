@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'PT Serif', serif;
   background-color: rgb(30,30,30);
 }
 
@@ -52,8 +52,9 @@ li .active {
 }
 
 h1 {
-	text-align: center;
-	font-size: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .left, .right {
