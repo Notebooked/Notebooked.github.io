@@ -81,8 +81,11 @@ input {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  border: 3px solid gray;
+}
+
+slideshow-slide {
   display: flex;
-  border: 3px solid gray
 }
 
 .prev, .next {
