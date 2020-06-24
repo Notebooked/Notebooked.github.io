@@ -1,4 +1,4 @@
-#### Error pages ####
+## Error pages
 # Bad request
 ErrorDocument 400 /errors/400.html
 # Login required
@@ -13,3 +13,7 @@ ErrorDocument 500 /errors/500.html
 ErrorDocument 503 /errors/503.html
 # Time-Out
 ErrorDocument 504 /errors/504.html
+
+## Security
+Order deny,allow
+Deny from all
