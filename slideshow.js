@@ -23,7 +23,7 @@ prev.addEventListener('click', () => {
   slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
-slideshowSlide.addEventListener('transitioned', () => {
+slideshowSlide.addEventListener('transitionend', () => {
   console.log(slideshowImages[counter]);
   if (slideshowImages[counter].id === 'lastClone') {
     slideshowSlide.style.transition = "none";
