@@ -82,6 +82,7 @@ input {
   position: relative;
   margin: auto;
   border: 3px solid gray;
+  overflow: hidden;
 }
 
 slideshow-slide {
