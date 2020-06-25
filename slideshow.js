@@ -10,6 +10,7 @@ const size = slideshowImages[0].clientWidth;
 slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 next.addEventListener('click', () => {
+  if (counter <= 0) return;
   slideshowSlide.style.transition = "transform 0.4s ease-in-out";
   counter++;
   slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -19,4 +20,18 @@ prev.addEventListener('click', () => {
   slideshowSlide.style.transition = "transform 0.4s ease-in-out";
   counter--;
   slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+slideshowSlide.addEventListener('transitioned', () => {
+  console.log(slideshowImages[counter]);
+  if (slideshowImages[counter].id === 'lastClone') {
+    slideshowSlide.style.transition = "none";
+    counter = slideshowImages.length - 2;
+    slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+  if {
+    slideshowSlide.style.transition = "none";
+    counter = slideshowImages.length - counter;
+    slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
 });
