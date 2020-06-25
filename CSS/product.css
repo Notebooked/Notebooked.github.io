@@ -101,6 +101,7 @@ slideshow-slide {
   width: auto;
   padding: 16px;
   margin-top: -22px;
+  opacity: 0.5;
 }
 
 #next {
@@ -115,10 +116,11 @@ slideshow-slide {
   width: auto;
   padding: 16px;
   margin-top: -22px;
+  opacity: 0.5;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+#prev:hover, #next:hover {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 300px) {
