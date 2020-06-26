@@ -28,7 +28,7 @@ slideshowSlide.addEventListener('transitionend', () => {
     counter = slideshowImages.length - 2;
     slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
   }
-  if {
+  if (slideshowImages[counter].id === 'firstClone') {
     slideshowSlide.style.transition = "none";
     counter = slideshowImages.length - counter;
     slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
