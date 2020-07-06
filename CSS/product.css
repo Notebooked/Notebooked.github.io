@@ -1,5 +1,5 @@
 body {
-  font-family: 'PT Serif', serif;
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(30,30,30);
 }
 
@@ -52,9 +52,8 @@ li .active {
 }
 
 h1 {
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-size: 40px;
 }
 
 .left, .right {
@@ -72,6 +71,8 @@ input {
   float:middle;
 }
 
+.mySlides {display: none}
+
 .screenshot {
   max-width:100%;
   height:auto;
@@ -81,46 +82,30 @@ input {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  border: 3px solid #868686;
-  overflow: hidden;
 }
 
-slideshow-slide {
-  display: flex;
-}
-
-#prev {
+.prev, .next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  z-index: 10;
-  left: 5%;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  opacity: 0.5;
-}
-
-#next {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  right: 5%;
-  font-size: 18px;
-  font-weight: bold;
   color: white;
-  cursor: pointer;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  opacity: 0.5;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-#prev:hover, #next:hover {
-  opacity: 1;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media only screen and (max-width: 300px) {

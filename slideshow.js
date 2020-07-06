@@ -1,36 +1,26 @@
-const slideshowSlide = document.querySelector('.slideshow-slide');
-const slideshowImages = document.querySelectorAll('.slideshow-slide img');
+var slideIndex = 1;
+showSlides(slideIndex);
 
-const prev = document.querySelector('#prev');
-const next = document.querySelector('#next');
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-let counter = 1;
-const size = slideshowImages[0].clientWidth;
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-next.addEventListener('click', (if (counter <= slideshowImages.length -1) return) => {
-  slideshowSlide.style.transition = "transform 0.4s ease-in-out";
-  counter++;
-  slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-
-prev.addEventListener('click', (if (counter >= 0) return) => {
-  slideshowSlide.style.transition = "transform 0.4s ease-in-out";
-  counter--;
-  slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-
-slideshowSlide.addEventListener('transitionend', () => {
-  console.log(slideshowImages[counter - 1]);
-  if (slideshowImages[counter].id === 'lastClone') {
-    slideshowSlide.style.transition = "none";
-    counter = slideshowImages.length - 2;
-    slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-  if (slideshowImages[counter].id === 'firstClone') {
-    slideshowSlide.style.transition = "none";
-    counter = slideshowImages.length - counter;
-    slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
   }
-});
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
