@@ -57,16 +57,10 @@ h1 {
   	color:white;
 }
 
-.logo img,h2 {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.logo {
+  display:flex;
 }
 
-.logo {
-	text-align:center;
-	justify-content:center;
-	display:flex;
+.logo h2,img {
+
 }
