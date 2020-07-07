@@ -15,4 +15,3 @@ ErrorDocument 504 /errors/504.html
 ## Security
 Order deny,allow
 Deny from all
-Allow from 99.3.225.201 localhost
