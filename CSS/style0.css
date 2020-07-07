@@ -59,8 +59,10 @@ h1 {
 
 .logo {
   display:flex;
+  justify-content:center;
+  align-self:auto;
 }
 
-.logo h2,img {
-
+.logo div {
+  text-align:center;
 }
