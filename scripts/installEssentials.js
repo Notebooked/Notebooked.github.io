@@ -13,6 +13,8 @@ document.write("
   <body>
     <footer>
       <p>The YouthDev name, logo, product names and logos, are trademarks of the company.</p>
+      <p id="footer-text">©" + new Date().getFullYear();"</p>
+      <a href="©" id="footer-text"></a>
     </footer>
   </body>
 ");
