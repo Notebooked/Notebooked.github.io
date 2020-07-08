@@ -20,15 +20,25 @@
         </header>
 	<div class="main" style="margin-top:200px">
 	  <div class="slideshow-container left">
-	    <i class="fas fa-angle-left" id="prev"></i>
-	    <i class="fas fa-angle-right" id="next"></i>
 	    <div class="slideshow-slide">
-	      <img class="screenshot" src="./images/TBT4.png" alt="In-game screenshot" id="lastClone">
-	      <img class="screenshot" src="./images/TBT2.png" alt="In-game screenshot">
-	      <img class="screenshot" src="./images/TBT3.png" alt="In-game screenshot">
-	      <img class="screenshot" src="./images/TBT1.png" alt="In-game screenshot">
-	      <img class="screenshot" src="./images/TBT4.png" alt="In-game screenshot">
-	      <img class="screenshot" src="./images/TBT1.png" alt="In-game screenshot" id="firstClone">
+<div class="mySlides">
+  <img src="./images/TBT1.png" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="./images/TBT2.png" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="./images/TBT3.png" style="width:100%">
+</div>
+	    </div>
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    <div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
 	    </div>
 	  </div>
 	  <br>
