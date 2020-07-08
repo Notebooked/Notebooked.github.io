@@ -71,8 +71,6 @@ input {
   float:middle;
 }
 
-.mySlides {display: none}
-
 .screenshot {
   max-width:100%;
   height:auto;

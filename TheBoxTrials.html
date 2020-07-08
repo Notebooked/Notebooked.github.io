@@ -19,37 +19,44 @@
             </nav>
         </header>
 	<div class="main" style="margin-top:200px">
-	  <div class="slideshow-container left">
-	    <div class="slideshow-slide">
-<div class="mySlides">
-  <img src="./images/TBT1.png" style="width:100%;display:block;">
-</div>
+    <div class="slideshow-container left">
 
-<div class="mySlides">
-  <img src="./images/TBT2.png" style="width:100%">
-</div>
+    <div class="mySlides fade">
+      <img src="./images/TBT1.png" style="width:100%">
+    </div>
 
-<div class="mySlides">
-  <img src="./images/TBT3.png" style="width:100%">
-</div>
-<div class="mySlides">
-  <img src="./images/TBT4.png" style="width:100%">
-</div>
-	    </div>
-	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-	    <div style="text-align:center">
-		  <span class="dot" onclick="currentSlide(1)"></span> 
-		  <span class="dot" onclick="currentSlide(2)"></span> 
-		  <span class="dot" onclick="currentSlide(3)"></span> 
-	    </div>
-	  </div>
-	  <br>
-	  <div class="right">
-	    <h1 style="text-align:center;color:white;padding:25px;">The Box Trials</h1>
-	    <p>The premier platforming game of battling, jumping, and sliding!</p>
-	    <a class="download" href="https://github.com/Notebooked/notebooked.github.io/releases/download/v1.0B/The.Box.Trials.V1.0B.exe" style="color:blue;font-size:30px;">Windows</a>
-	  </div>
-	</div>
+    <div class="mySlides fade">
+      <img src="./images/TBT1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./images/TBT1.png" style="width:100%">
+    </div>
+
+    </div>
+    <script >
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+</script>
     </body>
 </html>
