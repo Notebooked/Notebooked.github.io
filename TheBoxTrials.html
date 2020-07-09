@@ -19,44 +19,45 @@
             </nav>
         </header>
 	<div class="main" style="margin-top:200px">
-    <div class="slideshow-container left">
+	    <div class="slideshow-container left">
 
-    <div class="mySlides fade">
-      <img src="./images/TBT1.png" style="width:100%">
-    </div>
+	    <div class="mySlides fade">
+	      <img src="./images/TBT1.png" style="width:100%">
+	    </div>
 
-    <div class="mySlides fade">
-      <img src="./images/TBT1.png" style="width:100%">
-    </div>
+	    <div class="mySlides fade">
+	      <img src="./images/TBT1.png" style="width:100%">
+	    </div>
 
-    <div class="mySlides fade">
-      <img src="./images/TBT1.png" style="width:100%">
-    </div>
+	    <div class="mySlides fade">
+	      <img src="./images/TBT1.png" style="width:100%">
+	    </div>
 
-    </div>
-    <script >
-    var slideIndex = 1;
-    showSlides(slideIndex);
+	    </div>
+	    <script >
+		    var slideIndex = 1;
+		    showSlides(slideIndex);
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+		    function plusSlides(n) {
+		      showSlides(slideIndex += n);
+		    }
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
+		    function currentSlide(n) {
+		      showSlides(slideIndex = n);
+		    }
 
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-</script>
+		    function showSlides(n) {
+		      var i;
+		      var slides = document.getElementsByClassName("mySlides");
+		      if (n > slides.length) {slideIndex = 1}
+		      if (n < 1) {slideIndex = slides.length}
+		      for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		      }
+		      slides[slideIndex-1].style.display = "block";
+		      dots[slideIndex-1].className += " active";
+		    }
+	</script>
+	<a href="https://github.com/Notebooked/notebooked.github.io/releases/download/TheBoxTrials/The.Box.Trials.V1.0.exe" download>
     </body>
 </html>
