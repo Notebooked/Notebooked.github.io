@@ -224,3 +224,7 @@ nav .small-nav .sn-icon {
 .right-skill .skill-arrow {
   margin-right:auto;
 }
+
+.sk-arrow {
+  z-index:0;
+}
