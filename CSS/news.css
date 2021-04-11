@@ -1,0 +1,20 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(30,30,30);
+}
+
+.articles li {
+  margin-top:50px;
+  border:3px solid gray;
+}
+
+.articles li a {
+  color:white;
+  font-size:4vw;
+  text-decoration:none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.articles li a:hover {
+  background-color:rgb(20,20,20)
+}

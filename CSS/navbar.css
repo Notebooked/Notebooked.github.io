@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 75px;
+    z-index: 99999;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width:100%;
+  justify-content:center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-left:20px;
+  padding-right:20px;
+  font-size:40px;
+  font-family: 'Roboto', sans-serif;
+}
